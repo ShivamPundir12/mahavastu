@@ -16,15 +16,10 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     timer = Timer(
-      Duration(seconds: 9),
+      Duration(seconds: 8),
       () => Navigator.pushReplacement(
         context,
-        PageRouteBuilder(
-          // transitionDuration: Duration(seconds: ),
-          pageBuilder: ((BuildContext context, animation, secondaryAnimation) {
-            return HomeScreen();
-          }),
-        ),
+        MaterialPageRoute(builder: (context) => HomeScreen()),
       ),
     );
     super.initState();
@@ -41,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Container(
         constraints: BoxConstraints.expand(),
         child: Image.asset(
-          'assets/splash.gif',
+          'assets/ani2.gif',
           fit: BoxFit.fitHeight,
         ),
       ),
