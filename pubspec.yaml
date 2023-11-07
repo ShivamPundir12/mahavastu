@@ -37,7 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   webview_flutter: ^4.2.2
   webview_pro_platform_interface: ^1.8.1+2
-  webview_flutter_wkwebview: ^3.9.1
+  webview_flutter_wkwebview: ^3.9.3
 
 dev_dependencies:
   flutter_test:
